@@ -24,7 +24,7 @@ layout: default
 
   <h1 class="post-title">{{ page.title }}</h1>
   <div class="post-line"></div>
-
+   {% if page.tags %}
   <div class="post-info">
 
       <div>[
@@ -36,6 +36,7 @@ layout: default
 <br /><br /> 
 
   </div>
+    {% endif %}
 
   {{ content }}
 
