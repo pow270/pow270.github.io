@@ -28,6 +28,6 @@ Author: Steven Su
 {% endhighlight %}
 
 
-After waiting a lil bit we got this email:
+After waiting a little bit we got this email:
 > Reset Your Password  
   Congratulations! Normally, you would've reset the administrators password. For the purposes of this challenge, the flag is tpctf{D1D_Y0U_N0t1c3_Common_Sense_Reviews_1s_P4R7_0F_CSRF_19210jka010920aff}
