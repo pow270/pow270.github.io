@@ -2,7 +2,7 @@
 layout: post
 title:  "TPCTF2017 - superencrypt"
 author: "Rettila"
-tags: tpctf2017 rev60
+tags: tpctf rev 2017
 ---
 
 > My friend sent me a flag encrypted with an encryption program. Unfortunately, the decryption doesn't seem to work. Please help me decrypt this: dufhyuc\>bi\{\{f0\|;vwh\<\~b5p5thjq6goj\}  
