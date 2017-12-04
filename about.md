@@ -9,7 +9,16 @@ Capture The Flag (CTF) is a computer security wargame, where each participating 
 pow270 is a CTF team from Tunisia.
 (Formed in November 2017)
 
-## Contact
-ping@pow270.com
+### Members
 
-Thanks for reading!
+- **Rettila** <cite>Hosni Mribah</cite>
+- **KaSec** <cite>Karim Chaabane</cite>
+- **PsycoR** <cite>Rayen Messaoudi</cite>
+- **G0d3l** <cite>Mohamed Amine Kaabachi</cite>
+
+### Achievements
+
+- 1st Place, [BmyBit Hackathon 2017](https://bmybit.com/)
+
+### Contact
+[email] ping@pow270.com
