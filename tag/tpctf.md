@@ -1,6 +1,6 @@
 ---
 layout: tagpage
-title: "Tag: tpctf2017"
-tag: tpctf2017
+title: "Tag: tpctf"
+tag: tpctf
 robots: noindex
 ---
