@@ -12,7 +12,7 @@ Author: Kevin Higgs
 - By trying some inputs and watching the given outputs, we conclude that the output's length depends on the input's length.
 - Our encrypted string has a length of 34 characters, we can easily find that the input must be a 34 character string too.
 - By giving some inputs and modifying only one character, we can see that only one character changes in the output. 
-- We also notice that the encrypted letter is just a cesar encryption.
+- We also notice that the encryted letter is just shifted.
 
 ## Writing the decryption program
 {% highlight python %}
@@ -27,8 +27,8 @@ def decode(a,b,c):
 #dismatch function finds the new position of the modified character
 def dismatch(str1,str2):	
 	for i in range(0,len(str1)):
-    if (str1[i] != str2[i] ):
-    	return i
+        if (str1[i] != str2[i] ):
+            return i
 	return -1
 	
 context(arch = 'amd64', os = 'linux', endian = 'little', word_size = 32)
