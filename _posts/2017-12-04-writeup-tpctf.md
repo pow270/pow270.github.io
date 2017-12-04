@@ -1,25 +1,56 @@
 ---
 layout: post
-title:  "Writeup rev60"
+title:  "TPCTF2017 - superencrypt"
 author: "Rettila"
-tags: rev
+tags: tpctf2017 rev60
 ---
 
-Tale is minimal [Jekyll](https://jekyllrb.com/) theme curated for storytellers. It is designed and developed by [myself](https://github.com/chesterhow/) for a friend who writes short stories.
+> My friend sent me a flag encrypted with an encryption program. Unfortunately, the decryption doesn't seem to work. Please help me decrypt this: dufhyuc\>bi\{\{f0\|;vwh\<\~b5p5thjq6goj\}  
+Author: Kevin Higgs
 
-## Tale features
-- Compatible with GitHub Pages
-- Responsive design (looks just as good on mobile)
-- Syntax highlighting, with the help of Pygments
-- Markdown and HTML text formatting
-- Pagination of posts
+## Analyzing the program
+- By trying some inputs and watching the given outputs, we conclude that the output's length depends on the input's length.
+- Our encrypted string has a length of 34 characters, we can easily find that the input must be a 34 character string too.
+- By giving some inputs and modifying only one character, we can see that only one character changes in the output. 
+- We also notice that the encrypted letter is just a cesar encryption.
 
-Head over to the [Example Content]({{ site.baseurl }}/2017-03-16/example-content) post for a showcase of Tale's text formatting features.
+## Writing the decryption program
+{% highlight python %}
+from pwn import *
+import string
+import time
 
-## Browser Support
-Tale works on most if not all modern browsers, including Chrome, Safari and Firefox 👍🏼
+#Calulacting the decrypted character ( ord(a)-ord(b) ) is the decryption key
+def decode(a,b,c):	
+	return chr(ord(c)+ord(a)-ord(b)) 
 
-## Download or Contribute
-Tale is publicly hosted on GitHub, so go ahead and download or fork it at the [GitHub repository](https://github.com/chesterhow/tale). If you spot any bugs or have any suggestions, feel free to create an issue or make a pull request.
+#dismatch function finds the new position of the modified character
+def dismatch(str1,str2):	
+	for i in range(0,len(str1)):
+    if (str1[i] != str2[i] ):
+    	return i
+	return -1
+	
+context(arch = 'amd64', os = 'linux', endian = 'little', word_size = 32)
+binary = './superencrypt'  
+{% raw %}enc_flag = "dufhyuc>bi{{f0|;vwh<~b5p5thjq6goj}"{% endraw %}
+flag = list("-"*34)
+for offset in range(0,34):
+    rev = process(binary,stdin=process.PTY)
+    rev.sendlineafter("Please enter 0 to encrypt or 1 to decrypt:","0")
+    rev.sendlineafter("Enter the string you want to encrypt: ", ''.join(flag))
+    encrypted_flag1 = rev.recvline()
+    rev.close()
+    #Just modifying one character of the input
+    flag[offset] = '/'	
+    rev = process(binary,stdin=process.PTY)
+    rev.sendlineafter("Please enter 0 to encrypt or 1 to decrypt:","0")
+    rev.sendlineafter("Enter the string you want to encrypt: ", ''.join(flag))
+    encrypted_flag2 = rev.recvline()
+    rev.close()
+    image = dismatch(encrypted_flag1,encrypted_flag2)
+    flag[offset] = decode(flag[offset] ,encrypted_flag2[image] ,enc_flag[image])
+    print ''.join(flag)
+{% endhighlight %}
 
-Thanks for checking out Tale!
+The flag is: tpctf\{Y4Y_f0r_r3v3rse_3ngin33ring\}
