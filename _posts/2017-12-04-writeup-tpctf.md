@@ -29,7 +29,7 @@ def dismatch(str1,str2):
     for i in range(0,len(str1)):
         if (str1[i] != str2[i] ):
             return i
-	return -1
+    return -1
 	
 context(arch = 'amd64', os = 'linux', endian = 'little', word_size = 32)
 binary = './superencrypt'  
