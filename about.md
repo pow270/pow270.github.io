@@ -20,6 +20,8 @@ pow270 is a CTF team from Tunisia.
 
 - 1st Place, [BmyBit Hackathon 2017](https://bmybit.com/)
 - 1st Place, [Haxyd3 CTF G2foss 2017](http://haxyd3.g2foss.com/)
+- 1st Place, [TuniHack Hackathon 2017](http://tunihack.ossec.tn/)
+
 
 
 ### Contact
