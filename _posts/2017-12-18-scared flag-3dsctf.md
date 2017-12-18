@@ -30,4 +30,4 @@ tags: 3dsctf2017 rev
 
  ![](https://github.com/pow270/pow270.github.io/blob/master/_posts/pictures/2.PNG?raw=true)
  
- > We convert the hex values into string and we got the flag 3DS{youareabully}
+ > We convert the hex values loaded in the r24 register into string and we got the flag 3DS{youareabully}
