@@ -37,6 +37,7 @@ file.close()
 {% endhighlight %}
 
 - The command file gave that its an ELF, we just need to run it and get the flag
+
 > 3DS{H1dd3n_1n_7ru3_C0l0r5}
 
  ![](https://github.com/pow270/pow270.github.io/blob/master/_posts/pictures/6.png?raw=true)
