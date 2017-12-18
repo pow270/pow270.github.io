@@ -14,7 +14,7 @@ tags: 3dsctf2017 forensics
 - We are given a link that contains a bunch of colored rectangles
  ![](https://github.com/pow270/pow270.github.io/blob/master/_posts/pictures/4.PNG?raw=true)
 
-- We examine the source code we have an html table with hex colors,googling the first hex value (7F454C46) we found that is a signature of an executable linux file
+- We examine the source code we have an html table with hex colors, googling the first hex value (7F454C46) we found that is a signature of an executable linux file
 
  ![](https://github.com/pow270/pow270.github.io/blob/master/_posts/pictures/5.PNG?raw=true)
 
