@@ -22,8 +22,17 @@
 
     <footer>
       <span>
-        &copy; <time datetime="{{ site.time }}">{{ site.time | date: '%Y' }}</time> {{ site.author.name }}. 
+        &copy; <time datetime="{{ site.time }}">{{ site.time | date: '%Y' }}</time> {{ site.author.name }}.
       </span>
     </footer>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-111422189-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-111422189-1');
+    </script>
+
   </body>
 </html>
