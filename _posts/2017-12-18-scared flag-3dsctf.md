@@ -14,8 +14,9 @@ tags: 3dsctf2017 rev hex
 ## Steps
 - We are given a hex file (which is used generally in embedded programming) compiled by arduino.
 - We convert this hex file into a binary format using hex2bin command and applicate strings to it we get some fake flags.
-> 3DS{by Julio Della Flora}
 
+
+> 3DS{by Julio Della Flora}
 
 > 3DS{REALLY MR. FUZZER? Is that all you've got?}
 
