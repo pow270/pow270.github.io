@@ -2,7 +2,7 @@
 layout: post
 title:  "3DSCTF2017 - Scared Flag"
 author: "PsycoR"
-tags: 3dsctf2017 rev
+tags: 3dsctf2017 rev intel_hex
 ---
 
 >  Scared Flag - 477 Points
