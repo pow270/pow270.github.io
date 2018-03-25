@@ -6,16 +6,20 @@
     {% if page.title == "Home" %}
       {{ site.title }} &middot; CTF Team
     {% else %}
-   {{ site.title }} &middot; {{ page.title }}  
+   {{ site.title }} &middot; {{ page.title }}
     {% endif %}
   </title>
 
   <!-- CSS -->
   <link rel="stylesheet" href="{{ site.baseurl }}/styles.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700">
-  
+
   {% if site.tags != "" %}
 	{% include collecttags.html %}
+  {% endif %}
+
+  {% if page.use_math %}
+    {% include mathjax_support %}
   {% endif %}
 
 </head>
