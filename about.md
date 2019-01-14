@@ -15,6 +15,7 @@ pow270 is a CTF team from Tunisia.
 - **KaSec** <cite>Karim Chaabane</cite>
 - **PsycoR** <cite>Rayen Messaoudi</cite>
 - **G0d3l** <cite>Mohamed Amine Kaabachi</cite>
+- **Likkrid** <cite>Ridha Bejaoui</cite>
 
 ### Achievements
 
