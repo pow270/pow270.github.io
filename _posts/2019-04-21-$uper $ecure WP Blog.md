@@ -4,9 +4,11 @@ title:  "HZVII - $uper $ecure WP Blog"
 author: "PsycoR"
 tags: HZVII web
 ---
+## Description
 
 >  WordPress accounted for 90% of all hacked CMS sites in 2018, some WordPress features should be disabled or removed completely if it is not being used to avoid any potential risks. Otherwise, it should at the very least be blocked from external access.
 
+Task link : http://51.83.41.116/
 
 
 
