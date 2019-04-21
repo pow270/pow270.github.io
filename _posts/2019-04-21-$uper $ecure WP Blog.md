@@ -16,13 +16,13 @@ tags: HZVII web
 
  ![](https://raw.githubusercontent.com/pow270/pow270.github.io/master/_posts/pictures/wp0.png)
 
-- The source code shows that we need to be authenticated to get the flag, how to authenticate without login interface ?
+- The source code shows that we need to be authenticated to get the flag, so how to authenticate without login interface ?
 
  ![](https://raw.githubusercontent.com/pow270/pow270.github.io/master/_posts/pictures/wp1.png)
 
-- Simple scan with wpscan shows that the XML-RPC Interface is enabled. 
+- Simple scan with wpscan shows that the XML-RPC Interface is enabled
 
->In wp challenges people generally think about vulnerable plugins which is not the case here so What is XML-RPC ?
+>In wp challenges people generally think about vulnerable plugins which is not the case here so what is XML-RPC ?
 
  ![](https://raw.githubusercontent.com/pow270/pow270.github.io/master/_posts/pictures/wp2.png)
 
@@ -41,7 +41,7 @@ tags: HZVII web
 
 > The flag is not here :'(
 
-- Digging deeper for availible methods.
+- Digging deeper for availible methods
 
  ![](https://raw.githubusercontent.com/pow270/pow270.github.io/master/_posts/pictures/wp5.png)
 
